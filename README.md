@@ -1,6 +1,6 @@
 # nextjs-static-and-dynamic-page-creation-avatar-fetching
 
-# 🚀 How to Use Chakra UI with Next.js and React 🚀
+# 🚀 Static & Dynamic Page Creation & Data Fetching in Next.js 🚀
 
 https://github.com/coding-to-music/nextjs-static-and-dynamic-page-creation-avatar-fetching
 
