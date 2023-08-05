@@ -14,6 +14,10 @@ https://spacejelly.dev/posts/how-to-create-pages-in-next-js-with-static-dynamic-
 
 https://last-airbender-api.herokuapp.com/api/v1/characters/avatar -- This is no longer functional
 
+https://last-airbender-api.fly.dev/
+
+https://github.com/paigeegorry/last-airbender-api
+
 <!-- <div style="text-align:center;">
   <img src="/images/chakra.jpg" alt="Image" />
   <p><em>Chakra Component Library with Next.js</em></p>
