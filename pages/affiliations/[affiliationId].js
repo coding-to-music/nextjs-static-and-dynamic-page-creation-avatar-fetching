@@ -13,7 +13,7 @@ export default function Affiliation({ characters, affiliationId }) {
         style={{
           display: "grid",
           gridTemplateColumns: "1fr 1fr 1fr",
-          "grid-gap": "4em",
+          gridGap: "4em",
         }}
       >
         {characters.map((character) => {

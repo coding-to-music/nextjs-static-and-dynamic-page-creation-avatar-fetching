@@ -11,7 +11,7 @@ export default function Avatars({ avatars }) {
         style={{
           display: "grid",
           gridTemplateColumns: "1fr 1fr 1fr",
-          "grid-gap": "4em",
+          gridGap: "4em",
         }}
       >
         {avatars.map((avatar) => {
