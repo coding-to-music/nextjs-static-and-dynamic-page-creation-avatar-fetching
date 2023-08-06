@@ -1,8 +1,10 @@
 import Image from "next/image";
+import Header from "../../components/Header";
 
 export default function Affiliation({ characters, affiliationId }) {
   return (
     <div>
+      <Header />
       <h1>
         Characters Matching Affiliation &quot;
         {affiliationId.replace(/\+/g, " ")}&quot;
@@ -10,7 +12,7 @@ export default function Affiliation({ characters, affiliationId }) {
       <ul
         style={{
           display: "grid",
-          "grid-template-columns": "1fr 1fr 1fr",
+          gridTemplateColumns: "1fr 1fr 1fr",
           "grid-gap": "4em",
         }}
       >

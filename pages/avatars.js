@@ -1,14 +1,16 @@
 import Image from "next/image";
+import Header from "../components/Header";
 
 export default function Avatars({ avatars }) {
   return (
     <div>
+      <Header />
       <h1>Avatars</h1>
       <p>All of the Avatars that appeared in the show:</p>
       <ul
         style={{
           display: "grid",
-          "grid-template-columns": "1fr 1fr 1fr",
+          gridTemplateColumns: "1fr 1fr 1fr",
           "grid-gap": "4em",
         }}
       >
