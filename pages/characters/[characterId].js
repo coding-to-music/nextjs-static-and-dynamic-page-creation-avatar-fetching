@@ -15,7 +15,7 @@ export default function Character({ character }) {
 export async function getStaticProps({ params }) {
   const characterId = params.characterId.replace(/\-/g, "+");
   const results = await fetch(
-    `https://last-airbender-api.herokuapp.com/api/v1/characters?name=${characterId}`
+    `https://last-airbender-api.fly.dev/api/v1/characters?name=${characterId}`
   ).then((res) => res.json());
   return {
     props: {
@@ -26,7 +26,7 @@ export async function getStaticProps({ params }) {
 
 export async function getStaticPaths() {
   const characters = await fetch(
-    "https://last-airbender-api.herokuapp.com/api/v1/characters?perPage=500"
+    "https://last-airbender-api.fly.dev/api/v1/characters?perPage=500"
   ).then((res) => res.json());
   return {
     paths: characters

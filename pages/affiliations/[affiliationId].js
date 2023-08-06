@@ -19,7 +19,12 @@ export default function Affiliation({ characters, affiliationId }) {
             <li key={character._id}>
               <p>{character.name}</p>
               <p>{character.affiliation}</p>
-              <Image src={character.photoUrl} width="100%" alt="" />
+              <Image
+                src={character.photoUrl}
+                alt="Avatar"
+                width={300}
+                height={300}
+              />
             </li>
           );
         })}
@@ -31,7 +36,7 @@ export default function Affiliation({ characters, affiliationId }) {
 export async function getServerSideProps({ params }) {
   const affiliationId = params.affiliationId.replace(/\-/g, "+");
   const characters = await fetch(
-    `https://last-airbender-api.herokuapp.com/api/v1/characters?affiliation=${affiliationId}`
+    `https://last-airbender-api.fly.dev/api/v1/characters?affiliation=${affiliationId}`
   ).then((res) => res.json());
   return {
     props: {

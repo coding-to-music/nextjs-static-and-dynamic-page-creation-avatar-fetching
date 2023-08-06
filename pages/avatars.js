@@ -16,7 +16,12 @@ export default function Avatars({ avatars }) {
           return (
             <li key={avatar._id}>
               <p>{avatar.name}</p>
-              <Image src={avatar.photoUrl} width="100%" alt="" />
+              <Image
+                src={avatar.photoUrl}
+                alt="Avatar"
+                width={300}
+                height={300}
+              />
             </li>
           );
         })}
@@ -27,7 +32,7 @@ export default function Avatars({ avatars }) {
 
 export async function getStaticProps() {
   const avatars = await fetch(
-    "https://last-airbender-api.herokuapp.com/api/v1/characters/avatar"
+    "https://last-airbender-api.fly.dev/api/v1/characters/avatar"
   ).then((res) => res.json());
   return {
     props: {
