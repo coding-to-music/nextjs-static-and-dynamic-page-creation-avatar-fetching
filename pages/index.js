@@ -17,6 +17,11 @@ export default function Home() {
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
+        <p className={styles.description}>
+          <a href="https://github.com/coding-to-music/nextjs-static-and-dynamic-page-creation-avatar-fetching">
+            nextjs-static-and-dynamic-page-creation-avatar-fetching
+          </a>
+        </p>
 
         <p className={styles.description}>
           Get started by editing{" "}
