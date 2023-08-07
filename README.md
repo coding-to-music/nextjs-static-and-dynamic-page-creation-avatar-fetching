@@ -23,6 +23,12 @@ https://github.com/paigeegorry/last-airbender-api
   <p><em>Chakra Component Library with Next.js</em></p>
 </div> -->
 
+## Node Environment:
+
+```java
+nvm use 16
+```
+
 ## Environment variables:
 
 ```java
