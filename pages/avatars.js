@@ -3,6 +3,8 @@ import Header from "../components/Header";
 import styles from "../styles/Home.module.css";
 
 export default function Avatars({ avatars }) {
+  // console.log("Avatars");
+  // console.log(avatars);
   return (
     <div>
       <Header />
@@ -38,34 +40,3 @@ export async function getStaticProps() {
     },
   };
 }
-
-// export default function Avatars({ avatars }) {
-//   return (
-//     <div>
-//       <Header />
-//       <h1>Avatars</h1>
-//       <p>All of the Avatars that appeared in the show:</p>
-//       <ul
-//         style={{
-//           display: "grid",
-//           gridTemplateColumns: "1fr 1fr 1fr",
-//           gridGap: "4em",
-//         }}
-//       >
-//         {avatars.map((avatar) => {
-//           return (
-//             <li key={avatar._id}>
-//               <p>{avatar.name}</p>
-//               <Image
-//                 src={avatar.photoUrl}
-//                 alt="Avatar"
-//                 width={300}
-//                 height={300}
-//               />
-//             </li>
-//           );
-//         })}
-//       </ul>
-//     </div>
-//   );
-// }
