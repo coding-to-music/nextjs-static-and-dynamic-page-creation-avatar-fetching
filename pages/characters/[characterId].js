@@ -1,12 +1,15 @@
 import Image from "next/image";
-// import Header from "../../components/Header";
+import Header from "../../components/Header";
 
 export default function Character({ character }) {
   return (
     <div>
-      <Image src={character.photoUrl} alt="" />
+      <Header />
+      <h1>Character: {character.name}</h1>
+      <Image src={character.photoUrl} alt="Avatar" width={300} height={300} />
+
       <div>
-        <h1>{character.name}</h1>
+        {/* <h1>{character.name}</h1> */}
         <p>Affiliation: {character.affiliation}</p>
       </div>
     </div>

@@ -17,6 +17,11 @@ const Header = () => {
             </Link>
           </li>
           <li>
+            <Link href="/characters/korra">
+              <a>Character:Korra</a>
+            </Link>
+          </li>
+          <li>
             <Link href="/api">
               <a>API</a>
             </Link>
