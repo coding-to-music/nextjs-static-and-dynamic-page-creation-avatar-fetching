@@ -22,6 +22,11 @@ const Header = () => {
             </Link>
           </li>
           <li>
+            <Link href="/affiliations/water">
+              <a>Affiliations:water</a>
+            </Link>
+          </li>
+          <li>
             <Link href="/api">
               <a>API</a>
             </Link>
