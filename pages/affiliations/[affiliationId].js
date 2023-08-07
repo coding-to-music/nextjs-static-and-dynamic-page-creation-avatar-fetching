@@ -21,6 +21,7 @@ export default function Affiliation({ characters, affiliationId }) {
             <li key={character._id}>
               <p>{character.name}</p>
               <p>{character.affiliation}</p>
+              {/* <p>{character.photoUrl}</p> */}
               {/* <Image
                 src={character.photoUrl}
                 alt="Avatar"
